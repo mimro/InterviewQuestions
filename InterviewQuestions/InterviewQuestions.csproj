@@ -24,13 +24,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\add-question\add-question.component.ts" />
+    <None Remove="ClientApp\src\app\contact-form\contact-form.component.ts" />
+    <None Remove="ClientApp\src\app\models\Category.ts" />
+    <None Remove="ClientApp\src\app\models\Question.ts" />
     <None Remove="ClientApp\src\app\question-item\question-item.component.ts" />
-    <None Remove="ClientApp\src\app\questions\questions-list.component.ts" />
+    <None Remove="ClientApp\src\app\questions-list\questions-list.component.ts" />
+    <None Remove="ClientApp\src\app\resources\endpoints.ts" />
+    <None Remove="ClientApp\src\app\services\repositories\categoryRepository.service.ts" />
+    <None Remove="ClientApp\src\app\services\repositories\questionRepository.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\add-question\add-question.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\contact-form\contact-form.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\Category.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\Question.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\question-item\question-item.component.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\questions\questions-list.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\questions-list\questions-list.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\resources\endpoints.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\repositories\categoryRepository.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\repositories\questionRepository.service.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

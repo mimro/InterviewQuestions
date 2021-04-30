@@ -8,5 +8,6 @@
 export class QuestionItemComponent {
     @Input() questionText: string;
     @Input() questionAnswer: string;
-
+    @Input() index: number;
+    @Input() referenceLink: string;
 }

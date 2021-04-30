@@ -1,16 +1,19 @@
-﻿<div> <br /> </div>
+﻿<div class="question-panel">
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <div id="question-text">
+                {{index}}. {{questionText}}
+            </div>
+        </mat-expansion-panel-header>
 
-<mat-expansion-panel>
-    <mat-expansion-panel-header>
-        <div id="question-text">
-            {{questionText | uppercase}}
-        </div>
-    </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
 
-    <ng-template matExpansionPanelContent>
+            <div id="question-answer" [innerHtml]="questionAnswer">
+            </div>
+        </ng-template>
 
-        <div id="question-answer" [innerHtml]="questionAnswer">
-          
-        </div>
-    </ng-template>
-</mat-expansion-panel>
+        <a href={{referenceLink}}>{{referenceLink}}</a>
+
+    </mat-expansion-panel>
+
+</div>

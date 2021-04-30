@@ -1,0 +1,36 @@
+﻿<div class="add-question-page">
+    <div class="add-question-entry">
+        <mat-form-field class="example-full-width">
+            <mat-label>Pytanie</mat-label>
+            <input matInput placeholder="Pytanie..." [(ngModel)]="question" name="question">
+        </mat-form-field>
+
+        <div>
+            <mat-form-field class="example-full-width">
+                <mat-label>Odpowiedź</mat-label>
+                <textarea matInput placeholder="Odpowiedź" [(ngModel)]="answer" name="answer"></textarea>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="question-answer">
+        <mat-expansion-panel [expanded]="true">
+            <mat-expansion-panel-header>
+                <div id="question-text">
+                    1. {{question}}
+
+                </div>
+            </mat-expansion-panel-header>
+
+            <ng-template matExpansionPanelContent>
+
+                <div id="question-answer" [innerHtml]="answer">
+                </div>
+            </ng-template>
+            <a href={{referenceLink}}>{{referenceLink}}</a>
+
+        </mat-expansion-panel>
+
+    </div>
+    <button mat-raised-button color="primary" (click)="postQuestion()">Dodaj pytanie</button>
+</div>

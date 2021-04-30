@@ -1,0 +1,15 @@
+﻿<form novalidate (ngSubmit)="save()" [formGroup]="contactForm">
+    <mat-form-field class="example-full-width">
+        <input matInput
+               id="firstNameId"
+               placeholder="First Name (required)"
+               formControlName="firstName" />
+        </mat-form-field>
+        <!--[ngClass]="{'is-invalid': (customerForm.get('firstName').touched ||
+                                         customerForm.get('firstName').dirty) &&
+                                         !customerForm.get('firstName').valid }"-->
+
+    <button type="submit">submit</button>
+</form>
+
+<br>Value: {{ contactForm.value | json }}

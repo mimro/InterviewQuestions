@@ -1,0 +1,22 @@
+﻿[
+  {
+    "questionText": "Czym jest boxing i unboxing",
+    "questionAnswer": "<ul class='answer-list'><li>Boxing jest konwersją typu bezpośredniego na typ referencyjny</li><li>Unboxing jest konwersją typu referencyjnego na bezpośredni</li></ul> <img src='https://docs.microsoft.com/pl-pl/dotnet/csharp/programming-guide/types/media/boxing-and-unboxing/unboxing-conversion-operation.gif'></img>",
+    "referenceLink":""
+  },
+  {
+    "questionText": "Czym różni się klasa abstrakcyjna do interfejsu",
+    "questionAnswer": "Klasa abstrakcyjna może zawierać implementacje metod a interfejs nie ",
+    "referenceLink":""
+  },
+  {
+    "questionText": "Czym są typy bezpośrednie i referencyjne",
+    "questionAnswer": "<ul class='answer-list'><li>Typy bezpośrednie są przechowywane na stosie np (int, bool, Datetime)</li><li> Typy referencyjne przechowywane są na stercie</li></ul>",
+    "referenceLink":""
+  },
+  {
+    "questionText": "Jakie są różnice między Hashtable, a Dictionary",
+    "questionAnswer": "<table class='answer-table'><tr><th>Hashtable</th><th>Dictionary</th></tr><tr><td>Hashtable jest niegeneryczną kolekcją</td><td>Dictionaty jest generyczną kolekcją</td></tr><tr><td>Jest thread safe, wątki są synchronizowane za pomocą metody Synchronized()</td><td>Nie jest thread safe - potrzebuje własnej implementacji synchronizacji wątków</td></tr>  <tr><td>Enumerowany element: DictionaryEntry</td><td>Enumerowany element: KeyValuePair</td></tr><tr><td>od .NET 1.0</td><td>od .NET 2.0</td></tr><tr><td>System.Collections</td><td>System.Collections.Generic</td></tr><tr><td>Klucz nie istnieje: zwraca null</td><td>Klucz nie istnieje: rzuca wyjątkiem KeyNotFoundException</td></tr><tr><td>Wolniejszy od Dictionary ze względu na boxing/unboxing typów bezpośrenich</td><td>Szybsze dla typów bezpośrednich</td></tr></table>",
+    "referenceLink": "https://stackoverflow.com/a/5742863"
+  }
+]
